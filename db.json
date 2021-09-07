@@ -1,20 +1,3 @@
 {
-  "users": [
-    {
-      "name": "omkar",
-      "username": "",
-      "email": "",
-      "phone": "",
-      "website": "",
-      "id": 5
-    },
-    {
-      "name": "omakr",
-      "username": "7350906077",
-      "email": "otg0231@gmail.com",
-      "phone": "1234567891",
-      "website": "OKMAR",
-      "id": 6
-    }
-  ]
+  "users": []
 }

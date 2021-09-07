@@ -11,7 +11,7 @@ const Home = () => {
 
   const loadUsers = async () => {
     const result = await axios.get("http://localhost:3003/users");
-    setUser(result.data.reverse());
+    setUser(result.data);
   };
 
   const deleteUser = async id => {
@@ -26,7 +26,7 @@ const Home = () => {
         <table class="table border shadow">
           <thead class="thead-dark">
             <tr>
-              <th scope="col">Roll No.</th>
+              <th scope="col">#</th>
               <th scope="col">Name</th>
               <th scope="col">Phone</th>
               <th scope="col">Email</th>

@@ -45,6 +45,7 @@ const EditUser = () => {
               name="name"
               value={name}
               onChange={e => onInputChange(e)}
+              required
             />
           </div>
           <div className="form-group">
@@ -55,6 +56,7 @@ const EditUser = () => {
               name="username"
               value={username}
               onChange={e => onInputChange(e)}
+              required
             />
           </div>
           <div className="form-group">
@@ -65,6 +67,7 @@ const EditUser = () => {
               name="email"
               value={email}
               onChange={e => onInputChange(e)}
+              required
             />
           </div>
           <div className="form-group">
@@ -76,6 +79,7 @@ const EditUser = () => {
               value={phone}
               onChange={e => onInputChange(e)}
               minlength="10" 
+              required
             />
           </div>
           <div className="form-group">
@@ -86,6 +90,7 @@ const EditUser = () => {
               name="address"
               value={address}
               onChange={e => onInputChange(e)}
+              required
             />
           </div>
           <button className="btn btn-warning btn-block">Update Student</button>
