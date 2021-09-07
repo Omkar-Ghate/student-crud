@@ -26,9 +26,9 @@ const Home = () => {
         <table class="table border shadow">
           <thead class="thead-dark">
             <tr>
-              <th scope="col">#</th>
+              <th scope="col">Roll No.</th>
               <th scope="col">Name</th>
-              <th scope="col">User Name</th>
+              <th scope="col">Phone</th>
               <th scope="col">Email</th>
               <th>Action</th>
             </tr>
@@ -38,7 +38,7 @@ const Home = () => {
               <tr>
                 <th scope="row">{index + 1}</th>
                 <td>{user.name}</td>
-                <td>{user.username}</td>
+                <td>{user.phone}</td>
                 <td>{user.email}</td>
                 <td>
                   <Link class="btn btn-primary mr-2" to={`/users/${user.id}`}>

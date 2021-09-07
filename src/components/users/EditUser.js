@@ -10,10 +10,10 @@ const EditUser = () => {
     username: "",
     email: "",
     phone: "",
-    website: ""
+    address: ""
   });
 
-  const { name, username, email, phone, website } = user;
+  const { name, username, email, phone, address } = user;
   const onInputChange = e => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
@@ -35,7 +35,7 @@ const EditUser = () => {
   return (
     <div className="container">
       <div className="w-75 mx-auto shadow p-5">
-        <h2 className="text-center mb-4">Edit A User</h2>
+        <h2 className="text-center mb-4">Edit A Student</h2>
         <form onSubmit={e => onSubmit(e)}>
           <div className="form-group">
             <input
@@ -69,25 +69,26 @@ const EditUser = () => {
           </div>
           <div className="form-group">
             <input
-              type="text"
+              type="number"
               className="form-control form-control-lg"
               placeholder="Enter Your Phone Number"
               name="phone"
               value={phone}
               onChange={e => onInputChange(e)}
+              minlength="10" 
             />
           </div>
           <div className="form-group">
             <input
               type="text"
               className="form-control form-control-lg"
-              placeholder="Enter Your Website Name"
-              name="website"
-              value={website}
+              placeholder="Enter Your Address"
+              name="address"
+              value={address}
               onChange={e => onInputChange(e)}
             />
           </div>
-          <button className="btn btn-warning btn-block">Update User</button>
+          <button className="btn btn-warning btn-block">Update Student</button>
         </form>
       </div>
     </div>
